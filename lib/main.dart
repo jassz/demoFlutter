@@ -30,12 +30,12 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.all(20.0),
-              color: Colors.cyan,
+              color: Colors.cyanAccent,
               child: Center(child: Text('one')),
             ),
             Container(
               padding: EdgeInsets.all(20.0),
-              color: Colors.greenAccent,
+              color: Colors.yellowAccent,
               child: Center(child: Text('two')),
             ),
             Container(
