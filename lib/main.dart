@@ -22,26 +22,40 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text('Hello'),
-                Text('World!')
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.orangeAccent,
+                  child: Center(child: Text('row one')),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.blueAccent,
+                  child: Center(child: Text('row two')),
+                ),
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.purpleAccent,
+                  child: Center(child: Text('row three')),
+                ),
               ],
             ),
             Container(
               padding: EdgeInsets.all(20.0),
-              color: Colors.cyanAccent,
-              child: Center(child: Text('one')),
+              color: Colors.brown,
+              child: Center(child: Text('column one')),
             ),
             Container(
               padding: EdgeInsets.all(20.0),
               color: Colors.yellowAccent,
-              child: Center(child: Text('two')),
+              child: Center(child: Text('column two')),
             ),
             Container(
               padding: EdgeInsets.all(20.0),
               color: Colors.redAccent,
-              child: Center(child: Text('three')),
+              child: Center(child: Text('column three')),
             ),
           ],
         ),
