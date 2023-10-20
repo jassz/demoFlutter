@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: Image(
-              image: AssetImage('assets/space-3.jpg')
-          ),
+          child: Image.asset('assets/space-1.jpg')
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () { 'test'; },
