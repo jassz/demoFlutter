@@ -17,33 +17,12 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Hello'),
-                Text('World!')
-              ],
-            ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.cyanAccent,
-              child: Center(child: Text('one')),
-            ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.yellowAccent,
-              child: Center(child: Text('two')),
-            ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.redAccent,
-              child: Center(child: Text('three')),
-            ),
-          ],
+        body: Center(
+          child: Icon(
+            Icons.airport_shuttle,
+            color: Colors.blueAccent,
+            size: 50.0,
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () { 'test'; },
