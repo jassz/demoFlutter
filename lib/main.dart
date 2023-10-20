@@ -18,10 +18,8 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: Icon(
-            Icons.airport_shuttle,
-            color: Colors.blueAccent,
-            size: 50.0,
+          child: Image(
+              image: AssetImage('assets/space-3.jpg')
           ),
         ),
         floatingActionButton: FloatingActionButton(
