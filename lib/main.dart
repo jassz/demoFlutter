@@ -18,10 +18,16 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: Icon(
-            Icons.airport_shuttle,
-            color: Colors.blueAccent,
-            size: 50.0,
+          child: ElevatedButton.icon(
+            onPressed: (){
+              print("You pressed Icon Elevated Button");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.amber, // Background color
+              foregroundColor: Colors.black, // Text Color
+            ),
+            icon: Icon(Icons.save),  //icon data for elevated button
+            label: Text("Elevated Button with Icon"), //label text
           ),
         ),
         floatingActionButton: FloatingActionButton(
