@@ -17,33 +17,37 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Row(
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Hello'),
-                Text('World!')
-              ],
+            Expanded(
+                child: Image.asset('assets/space-2.jpg'),
+              flex: 2,
             ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.cyanAccent,
-              child: Center(child: Text('one')),
+            Expanded( //same with flexbox in CSS
+              flex: 1, //portion width how much we want to take up
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.cyan,
+                child: Text('1'),
+              ),
             ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.yellowAccent,
-              child: Center(child: Text('two')),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: Text('2'),
+              ),
             ),
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.redAccent,
-              child: Center(child: Text('three')),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amberAccent,
+                child: Text('3'),
+              ),
             ),
-          ],
+          ]
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () { 'test'; },
